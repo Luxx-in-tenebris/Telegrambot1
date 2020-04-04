@@ -1,9 +1,10 @@
 import telebot
+import config
 from telebot import apihelper
 import requests
 
 
-bot = telebot.TeleBot('')
+bot = telebot.TeleBot(config.TOKEN)
 
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
