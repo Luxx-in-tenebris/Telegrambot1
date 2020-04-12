@@ -31,7 +31,7 @@ def main():
 
         #если есть ответ от бота - присылаем юзеру, если нет - бот его не понял
         if response:
-            bot.send_message(chat_id,responseJson)
+            bot.send_message(chat_id,response)
         else:
             bot.send_message(chat_id,'Не понял, чо?')
         
